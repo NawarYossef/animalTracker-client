@@ -1,7 +1,52 @@
-.navbar {
-  background-color: blue;
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  top: 0px;
+header {
+  height: 70px;
+  background-color: rgb(22, 22, 26);
+  padding: 0px;
 }
+
+.app-title-wrapper,
+nav {
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  height: 100%;
+}
+
+ul {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+li {
+  display: inline;
+  padding-right: 40px;
+}
+
+a {
+  color: #ffffff;
+  font: normal 1.2em sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(119, 114, 114);
+}
+
+button:hover {
+  background: rgb(119, 114, 114);
+}
+
+button {
+  height: 40px;
+}
+
+h1 {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+

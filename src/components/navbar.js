@@ -23,11 +23,14 @@ export function Navbar(props) {
     links = [<Link to="/register">Register</Link>];
   }
   return (
-    <header className="navbar">
-      <nav>
+    <header className=" col-12">
+      <div className="col-6 app-title-wrapper">
+        <h1>AnimalTracker</h1>
+      </div>
+      <nav className="navbar col-6">
         <ul>
           {links.map(link => {
-            return <li>{link}</li>
+            return <li>{link}</li>;
           })}
         </ul>
       </nav>
