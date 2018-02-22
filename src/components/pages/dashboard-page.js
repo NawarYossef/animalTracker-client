@@ -12,8 +12,8 @@ export class DashboardPage extends React.Component {
     return (
       <div className="dashboard">
         <p>THIS IS THE DASHBOARD</p>
-        <div className="all-animal;s">
-        
+        <div className="all-animals">
+          
         </div>
       </div>
     );

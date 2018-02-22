@@ -1,0 +1,17 @@
+.add-animal {
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  height: 40px;
+}
+
+.submit-button {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+h3  {
+  margin-top: 20px;
+}

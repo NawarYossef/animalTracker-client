@@ -16,7 +16,7 @@ export function Navbar(props) {
     links = [
       <Link to="/dashboard">DASHBOARD</Link>,
       <Link to="/new-animal">NEW ANIMAL</Link>,
-      <Link to="/account">ACCOUNT</Link>,
+      <Link to="/account">MY ACCOUNT</Link>,
       <button onClick={() => logOut()}>Log out</button>
     ];
   } else {
