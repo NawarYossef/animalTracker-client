@@ -14,16 +14,24 @@ export function Navbar(props) {
   let links = [];
   if (props.loggedIn) {
     links = [
-      <button onClick={() => logOut()}>Log out</button>,
-      <Link to="/dashboard">Dashboard</Link>
+      <Link to="/dashboard">DASHBOARD</Link>,
+      <Link to="/new-animal">NEW ANIMAL</Link>,
+      <Link to="/account">ACCOUNT</Link>,
+      <button onClick={() => logOut()}>Log out</button>
     ];
   } else {
     links = [<Link to="/register">Register</Link>];
   }
   return (
-    <div className="navbar">
-      <p>this is the nav {links}</p>
-    </div>
+    <header className="navbar">
+      <nav>
+        <ul>
+          {links.map(link => {
+            return <li>{link}</li>
+          })}
+        </ul>
+      </nav>
+    </header>
   );
 }
 

@@ -3,18 +3,15 @@ import { connect } from "react-redux";
 import requiresLogin from "../requires-login";
 import { fetchProtectedData } from "../../actions/protected-data";
 
-export class DashboardPage extends React.Component {
+export class AccountPage extends React.Component {
   componentDidMount() {
     this.props.dispatch(fetchProtectedData());
   }
 
   render() {
     return (
-      <div className="dashboard">
-        <p>THIS IS THE DASHBOARD</p>
-        <div className="all-animal;s">
-        
-        </div>
+      <div className="account">
+        <p>THIS IS THE ACCOUNT</p>
       </div>
     );
   }
@@ -29,4 +26,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default requiresLogin()(connect(mapStateToProps)(DashboardPage));
+export default requiresLogin()(connect(mapStateToProps)(AccountPage));

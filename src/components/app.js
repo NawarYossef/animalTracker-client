@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
 import LandingPage from "./pages/landing-page";
 import DashboardPage from "./pages/dashboard-page";
-import AddAnimal from "./pages/add-animal";
+import NewAnimalPage from "./pages/new-animal-page";
+import AccountPage from "./pages/account-page";
 import RegistrationPage from "./pages/registration-page";
 import { refreshAuthToken } from "../actions/auth";
 import Navbar from "./navbar";
@@ -43,8 +44,9 @@ export class App extends React.Component {
       <div className="app">
         <Navbar />
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="/add-animal" component={AddAnimal} />
+        <Route exact path="/new-animal" component={NewAnimalPage} />
         <Route exact path="/dashboard" component={DashboardPage} />
+        <Route exact path="/account" component={AccountPage} />
         <Route exact path="/register" component={RegistrationPage} />
       </div>
     );
