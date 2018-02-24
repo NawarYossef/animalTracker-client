@@ -2,6 +2,11 @@ import React from "react";
 import { connect } from "react-redux";
 import requiresLogin from "../requires-login";
 import { fetchProtectedData } from "../../actions/protected-data";
+import { Link, Redirect, Route } from "react-router-dom";
+
+import Animal from "./animal-components/animal";
+
+import "./styles/dashboard-page.css";
 
 export class DashboardPage extends React.Component {
   componentDidMount() {
@@ -12,8 +17,16 @@ export class DashboardPage extends React.Component {
     return (
       <div className="dashboard">
         <p>THIS IS THE DASHBOARD</p>
-        <div className="all-animals">
-          
+        <div className="all-animal-links">
+          <Link to="/animal/123" className="dashboard-link">
+            Animal
+          </Link>
+          <Link to="/animal/123" className="dashboard-link">
+            Animal
+          </Link>
+          <Link to="/animal/123" className="dashboard-link">
+            Animal
+          </Link>
         </div>
       </div>
     );

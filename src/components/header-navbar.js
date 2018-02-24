@@ -5,7 +5,7 @@ import "./nav.css";
 import { clearAuth } from "../actions/auth";
 import { clearAuthToken } from "../local-storage";
 
-export function Navbar(props) {
+export function HeaderNavbar(props) {
   function logOut() {
     props.dispatch(clearAuth());
     clearAuthToken();
@@ -14,9 +14,9 @@ export function Navbar(props) {
   let links = [];
   if (props.loggedIn) {
     links = [
-      <Link to="/dashboard">DASHBOARD</Link>,
-      <Link to="/new-animal">NEW ANIMAL</Link>,
-      <Link to="/account">MY ACCOUNT</Link>,
+      <Link to="/dashboard" className="header-nav">DASHBOARD</Link>,
+      <Link to="/new-animal" className="header-nav">NEW ANIMAL</Link>,
+      <Link to="/account" className="header-nav">MY ACCOUNT</Link>,
       <button onClick={() => logOut()}>Log out</button>
     ];
   } else {
@@ -42,4 +42,4 @@ const mapStateToProps = state => ({
   loggedIn: state.auth.currentUser !== null
 });
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps)(HeaderNavbar);

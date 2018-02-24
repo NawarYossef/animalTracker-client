@@ -1,13 +1,22 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
+import { refreshAuthToken } from "../actions/auth";
+
 import LandingPage from "./pages/landing-page";
 import DashboardPage from "./pages/dashboard-page";
+import AnimalPage from "./pages/animal-page";
 import NewAnimalPage from "./pages/new-animal-page";
 import AccountPage from "./pages/account-page";
 import RegistrationPage from "./pages/registration-page";
-import { refreshAuthToken } from "../actions/auth";
-import Navbar from "./navbar";
+
+import AnimalNavbar from "pages/animal-components/animal-navbar";
+import Behavior from "./pages/animal-components/behavior";
+import Record from "./pages/animal-components/record";
+import DietAndMedication from "./pages/animal-components/diet-medication";
+import Chart from "./pages/animal-components/chart";
+
+import HeaderNavbar from "./header-navbar";
 
 export class App extends React.Component {
   componentWillReceiveProps(nextProps) {
@@ -42,12 +51,17 @@ export class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Navbar />
+        <HeaderNavbar />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/new-animal" component={NewAnimalPage} />
         <Route exact path="/dashboard" component={DashboardPage} />
+        <Route exact path="/animal/:id" component={AnimalPage} />
         <Route exact path="/account" component={AccountPage} />
         <Route exact path="/register" component={RegistrationPage} />
+        <Route exact path="/animal/:id/behavior" component={Behavior} />
+        <Route exact path="/animal/:id/record" component={Record} />
+        <Route exact path="/animal/:id/diet-medication" component={DietAndMedication} />
+        <Route exact path="/animal/:id/chart" component={Chart} />
       </div>
     );
   }

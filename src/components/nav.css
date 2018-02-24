@@ -24,13 +24,13 @@ li {
   padding-right: 40px;
 }
 
-a {
+.header-nav {
   color: #ffffff;
   font: normal 1.2em sans-serif;
   text-decoration: none;
 }
 
-a:hover {
+.header-nav:hover {
   color: rgb(119, 114, 114);
 }
 

@@ -1,0 +1,9 @@
+.animal-link {
+  color: #292828;
+  font: normal 1.2em sans-serif;
+  text-decoration: none;
+}
+
+.animal-link:hover { 
+  color: #777171;
+}

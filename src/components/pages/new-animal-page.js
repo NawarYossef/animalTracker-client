@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
-import "./css/new-animal.css";
+import "./styles/new-animal.css";
 
 export class NewAnimalPage extends React.Component {
   constructor(props) {

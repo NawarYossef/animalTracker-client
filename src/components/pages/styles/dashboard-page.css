@@ -1,0 +1,7 @@
+body .dashboard-link {
+  color: black;
+}
+
+body .dashboard-link:hover {
+  color: rgb(61, 61, 61);
+}
