@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import requiresLogin from "../requires-login";
 import { fetchProtectedData } from "../../actions/protected-data";
 import { Link, Redirect } from "react-router-dom";
-
-import Animal from "./animal-components/animal"
+import AnimalNavbar from "./animal-components/animal-navbar";
 
 export class AnimalPage extends React.Component {
   // componentDidMount() {
@@ -14,8 +13,7 @@ export class AnimalPage extends React.Component {
   render() {
     return (
       <div className="animal">
-        <p>THIS IS THE Animal</p>
-        <Animal />
+      <AnimalNavbar />
       </div>
     );
   }

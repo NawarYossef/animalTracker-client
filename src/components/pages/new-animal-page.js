@@ -17,31 +17,27 @@ export class NewAnimalPage extends React.Component {
             <h3>PROFILE IMAGE</h3>
             <input type="file" name="pic" />
           </label>
-          <label >
-          <h3>Name</h3>
+          <label>
+            <h3>Name</h3>
             <input type="text" name="name" />
           </label>
-          <label >
-          <h3>CLASS</h3>
-            <input type="text" name="animal-class" />
-          </label>
-          <label >
-          <h3>SPECIES</h3>
+          <label>
+            <h3>SPECIES</h3>
             <input type="text" name="species" />
           </label>
-          <label >
-          <h3>BREAD</h3>
-            <input type="text" name="bread" />
+          <label>
+            <h3>BREED</h3>
+            <input type="text" name="breed" />
           </label>
           <label>
-          <h3>DATE RECEIVED</h3>
+            <h3>DATE RECEIVED</h3>
             <input type="date" name="date" />
           </label>
-          <label >
-          <h3>APPROXIMATE AGE</h3>
+          <label>
+            <h3>APPROXIMATE AGE</h3>
             <input type="date" name="age" />
           </label>
-          <input type="submit" value="Submit" className="submit-button"/>
+          <input type="submit" value="Submit" className="submit-button" />
         </form>
       </div>
     );

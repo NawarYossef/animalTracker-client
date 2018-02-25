@@ -4,8 +4,6 @@ import requiresLogin from "../requires-login";
 import { fetchProtectedData } from "../../actions/protected-data";
 import { Link, Redirect, Route } from "react-router-dom";
 
-import Animal from "./animal-components/animal";
-
 import "./styles/dashboard-page.css";
 
 export class DashboardPage extends React.Component {

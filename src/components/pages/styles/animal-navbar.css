@@ -1,9 +1,34 @@
-.animal-link {
+body .nav-wrapper {
+  height: 70px;
+  background-color: rgb(192, 191, 191);
+  padding: 0px;
+}
+
+.navbar {
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  height: 100%;
+}
+
+.navbar ul {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.animal-header-link {
   color: #292828;
   font: normal 1.2em sans-serif;
   text-decoration: none;
 }
 
-.animal-link:hover { 
+.animal-header-link:hover { 
   color: #777171;
+}
+
+.animal-header-link {
+  display: inline;
+  padding-right: 40px;
 }

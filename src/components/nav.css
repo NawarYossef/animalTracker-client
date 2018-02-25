@@ -12,14 +12,14 @@ nav {
   height: 100%;
 }
 
-ul {
+header ul {
   margin: 0px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-li {
+.header-link {
   display: inline;
   padding-right: 40px;
 }
@@ -38,7 +38,7 @@ button:hover {
   background: rgb(119, 114, 114);
 }
 
-button {
+header button {
   height: 40px;
 }
 

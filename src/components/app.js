@@ -10,11 +10,11 @@ import NewAnimalPage from "./pages/new-animal-page";
 import AccountPage from "./pages/account-page";
 import RegistrationPage from "./pages/registration-page";
 
-import AnimalNavbar from "pages/animal-components/animal-navbar";
+import AnimalNavbar from "./pages/animal-components/animal-navbar";
 import Behavior from "./pages/animal-components/behavior";
-import Record from "./pages/animal-components/record";
-import DietAndMedication from "./pages/animal-components/diet-medication";
 import Chart from "./pages/animal-components/chart";
+import Assessment from "./pages/animal-components/assessment";
+import AnimalProfile from "./pages/animal-components/animal-profile";
 
 import HeaderNavbar from "./header-navbar";
 
@@ -59,9 +59,9 @@ export class App extends React.Component {
         <Route exact path="/account" component={AccountPage} />
         <Route exact path="/register" component={RegistrationPage} />
         <Route exact path="/animal/:id/behavior" component={Behavior} />
-        <Route exact path="/animal/:id/record" component={Record} />
-        <Route exact path="/animal/:id/diet-medication" component={DietAndMedication} />
         <Route exact path="/animal/:id/chart" component={Chart} />
+        <Route exact path="/animal/:id/assessment" component={Assessment} />
+        <Route exact path="/animal/:id/animal-profile" component={AnimalProfile} />
       </div>
     );
   }

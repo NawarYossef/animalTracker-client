@@ -1,9 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
-import "./nav.css";
 import { clearAuth } from "../actions/auth";
 import { clearAuthToken } from "../local-storage";
+
+import "./nav.css";
 
 export function HeaderNavbar(props) {
   function logOut() {
@@ -27,10 +28,10 @@ export function HeaderNavbar(props) {
       <div className="col-6 app-title-wrapper">
         <h1>AnimalTracker</h1>
       </div>
-      <nav className="navbar col-6">
+      <nav className=" col-6">
         <ul>
           {links.map(link => {
-            return <li>{link}</li>;
+            return <li className={"header-link"}>{link}</li>;
           })}
         </ul>
       </nav>
@@ -43,3 +44,11 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(HeaderNavbar);
+
+comments: [
+  {
+    id: 1234,
+    comment: "some text"
+  },
+  
+]

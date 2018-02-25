@@ -14,18 +14,18 @@ export function AnimalNavbar(props) {
   let links = [];
   if (props.loggedIn) {
     links = [
-      <Link to="/animal/123/behavior" className="animal-link">BEHAVIOR</Link>,
-      <Link to="/animal/123/record" className="animal-link">RECORD</Link>,
-      <Link to="/animal/123/diet-medication" className="animal-link">DIET/MEDICATION</Link>,
       <Link to="/animal/123/chart" className="animal-link">CHART</Link>,
+      <Link to="/animal/123/behavior" className="animal-link">BEHAVIOR</Link>,
+      <Link to="/animal/123/animal-profile" className="animal-link">ANIMAL PROFILE</Link>,
+      <Link to="/animal/123/assessment" className="animal-link">ASSESSMENT</Link>
     ];
   } 
   return (
-    <div className=" col-12">
-      <nav className="navbar col-6">
+    <div className="nav-wrapper col-12">
+      <nav className="navbar col-12">
         <ul>
           {links.map(link => {
-            return <li>{link}</li>;
+            return <li className="animal-header-link">{link}</li>;
           })}
         </ul>
       </nav>
