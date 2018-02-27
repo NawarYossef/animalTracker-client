@@ -4,7 +4,7 @@ import { Link, Redirect } from "react-router-dom";
 import { clearAuth } from "../actions/auth";
 import { clearAuthToken } from "../local-storage";
 
-import "./nav.css";
+import "./header-navbar.css";
 
 export function HeaderNavbar(props) {
   function logOut() {

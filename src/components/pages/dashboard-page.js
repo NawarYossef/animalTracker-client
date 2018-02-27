@@ -17,7 +17,7 @@ export class DashboardPage extends React.Component {
         <p>THIS IS THE DASHBOARD</p>
         <div className="all-animal-links">
           <Link to="/animal/123" className="dashboard-link">
-            Animal
+            <img src="https://www.w3schools.com/images/picture.jpg" />Animal
           </Link>
           <Link to="/animal/123" className="dashboard-link">
             Animal

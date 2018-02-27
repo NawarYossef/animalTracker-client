@@ -1,5 +1,6 @@
 body .dashboard-link {
   color: black;
+  margin-left: 10px;
 }
 
 body .dashboard-link:hover {
